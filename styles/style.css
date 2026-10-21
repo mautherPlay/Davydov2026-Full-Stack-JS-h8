@@ -34,7 +34,7 @@ body.registration-page {
 /* Хідер та навігація */
 header {
   background-color: var(--color-mahogany);
-  padding: 16px;
+  padding: 16px 0;
 }
 
 header h1 {
@@ -45,6 +45,14 @@ header h1 {
 
 header nav > ul {
   list-style: none;
+}
+
+header nav li {
+  margin-bottom: 8px;
+}
+
+header nav li:last-child {
+  margin-bottom: 0;
 }
 
 nav a:link,
@@ -69,13 +77,17 @@ nav a:active {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 192px 16px;
+  padding: 192px 0;
 }
 
 main section {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  padding: 16px;
+  padding: 16px 0;
+}
+
+main section > .container > :last-child {
+  margin-bottom: 0;
 }
 
 main section h2 {
@@ -146,7 +158,7 @@ main section p {
 
 .cards {
   list-style: none;
-  margin: 16px 0;
+  margin-bottom: 16px;
   padding: 16px;
 }
 
@@ -169,8 +181,12 @@ main section p {
   background-color: inherit;
   color: inherit;
   text-align: center;
-  margin: 12px 0;
+  margin-bottom: 12px;
   padding: 16px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .card > img {
@@ -202,18 +218,26 @@ main section p {
   content: '- ';
 }
 
-#about-us section {
-  padding: 16px;
+#about-us article {
+  margin-bottom: 16px;
 }
 
-#about-us section > h3 {
+#about-us article > h3 {
   color: var(--color-spruce);
   font-size: 28px;
   text-align: center;
 }
 
-#about-us section > p {
+#about-us article > p {
   line-height: 1.5;
+}
+
+#about-us article > :last-child {
+  margin-bottom: 0;
+}
+
+#about-us article:last-child {
+  margin-bottom: 0;
 }
 
 #about-us .about-company > p:first-of-type::first-letter,
@@ -231,11 +255,16 @@ footer {
   color: var(--color-white);
   text-align: center;
   background-color: var(--color-mahogany);
-  padding: 16px;
+  padding: 16px 0;
+}
+
+footer a {
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
 footer p {
-  margin: 12px 0 0;
+  margin-bottom: 0;
 }
 
 footer a:link,
@@ -251,6 +280,7 @@ footer a:focus {
 
 .container {
   max-width: 1400px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
